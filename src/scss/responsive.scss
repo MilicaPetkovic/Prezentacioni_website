@@ -1,0 +1,130 @@
+@media only screen and (max-width: 1500px) {
+  footer {
+    .top--section {
+      padding: 45px 60px;
+      .footer--socials {
+        svg {
+          margin-right: 8px;
+        }
+      }
+    }
+    .bottom--section {
+      padding: 20px 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  // header {
+  //   .nav--bar {
+  //     .hamburger {
+  //       position: absolute;
+  //       z-index: 9999;
+  //       cursor: pointer;
+  //       right: 5%;
+  //       top: 5%;
+  //       .line {
+  //         width: 30px;
+  //         height: 3px;
+  //         background-color: #fff;
+  //         margin: 5px;
+  //       }
+  //     }
+  //     .nav--links {
+  //       position: absolute;
+  //       background-color: #000;
+  //       height: 100vh;
+  //       width: 100%;
+  //       z-index: 999;
+  //       flex-direction: column;
+  //       justify-content: center;
+  //       align-items: center;
+  //       p,
+  //       a {
+  //         font-size: 45px;
+  //       }
+  //       .left--nav--section {
+  //         flex-direction: column;
+  //         margin-bottom: 20px;
+  //       }
+  //       .right--nav--section {
+  //         .log--in {
+  //           svg {
+  //             width: 50px;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  .about {
+    padding: 150px 180px;
+  }
+  footer {
+    .top--section {
+      flex-wrap: wrap;
+      .footer--content {
+        flex-basis: 50%;
+        padding-left: 0;
+        border: none;
+        &:nth-child(3) {
+          flex-basis: 50%;
+        }
+        &:nth-child(4) {
+          flex-basis: 50%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 850px) {
+  .advertise {
+    padding: 50px 60px 50px;
+    .advertise--container {
+      flex-direction: column;
+      .advertise--info {
+        align-items: center;
+      }
+      .advertise--img {
+        margin-left: 0;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+  .about {
+    padding: 60px 100px;
+    .content {
+      top: 20%;
+    }
+  }
+  footer {
+    .top--section {
+      flex-direction: column;
+    }
+    .bottom--section {
+      flex-direction: column;
+    }
+  }
+}
+@media only screen and (max-width: 450px) {
+  .about {
+    padding: 30px 80px;
+    .content {
+      top: 10%;
+      .button--first {
+        padding: 25px 50px;
+        margin-top: 40px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 335px) {
+  .about {
+    .content {
+      .button--first {
+        margin-top: 20px;
+      }
+    }
+  }
+}
