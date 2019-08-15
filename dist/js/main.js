@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".carousel--container").slick({dots:!0,arrows:!1})});
+$(document).ready(function(){$(".carousel--container").slick({dots:!0,arrows:!0,autoplay:!0}),$(".hamburger").click(function(){$(".hamburger").toggleClass("active"),$(".nav--links").toggleClass("active")})});

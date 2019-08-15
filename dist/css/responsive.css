@@ -1,4 +1,10 @@
+@media only screen and (max-width: 1600px) {
+  header .slick-slider .slick-dots {
+    bottom: 90px; } }
+
 @media only screen and (max-width: 1500px) {
+  header .nav--bar .nav--links .left--nav--section {
+    flex-basis: 25%; }
   footer .top--section {
     padding: 45px 60px; }
     footer .top--section .footer--socials svg {
@@ -6,7 +12,61 @@
   footer .bottom--section {
     padding: 20px 60px; } }
 
+@media only screen and (max-width: 1280px) {
+  .plan--container {
+    padding: 150px 80px 50px; }
+    .plan--container .illustration--section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center; }
+  .pricing--container {
+    flex-wrap: wrap; }
+    .pricing--container .single--item {
+      flex-basis: 40%;
+      margin-bottom: 40px; }
+      .pricing--container .single--item .switch--box {
+        padding: 9px 20px 10px; } }
+
 @media only screen and (max-width: 1200px) {
+  header .nav--bar {
+    background-color: #24345c; }
+    header .nav--bar .hamburger {
+      position: absolute;
+      display: block;
+      right: 5%;
+      font-size: 40px;
+      color: #fff;
+      z-index: 9999;
+      cursor: pointer; }
+    header .nav--bar .nav--links {
+      display: none; }
+    header .nav--bar .nav--links.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      width: 100%;
+      top: 100%;
+      height: 100vh;
+      background-color: #000;
+      opacity: 0.9;
+      left: 0;
+      right: 0;
+      justify-content: center;
+      align-items: center; }
+      header .nav--bar .nav--links.active .left--nav--section {
+        flex-direction: column;
+        margin-left: 0;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 60px; }
+        header .nav--bar .nav--links.active .left--nav--section a {
+          font-size: 35px; }
+      header .nav--bar .nav--links.active .right--nav--section {
+        flex-direction: column; }
+        header .nav--bar .nav--links.active .right--nav--section p {
+          font-size: 35px; }
+  .active {
+    display: block; }
   .about {
     padding: 150px 180px; }
   footer .top--section {
@@ -18,9 +78,36 @@
       footer .top--section .footer--content:nth-child(3) {
         flex-basis: 50%; }
       footer .top--section .footer--content:nth-child(4) {
-        flex-basis: 50%; } }
+        flex-basis: 50%;
+        margin-bottom: 30px;
+        align-self: flex-start;
+        text-align: left; }
+  .packages--container {
+    padding: 120px 100px; } }
+
+@media only screen and (max-width: 880px) {
+  header .slick-slider .slick-dots {
+    bottom: 60px; }
+  header .main--title {
+    top: 20%; }
+    header .main--title form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 7px; }
+      header .main--title form .dropdown {
+        margin-bottom: 7px;
+        width: 100%; }
+      header .main--title form button {
+        width: 100%;
+        justify-content: center; }
+      header .main--title form input {
+        margin-bottom: 7px; } }
 
 @media only screen and (max-width: 850px) {
+  header .main--title h1 {
+    max-width: 80%; }
   .advertise {
     padding: 50px 60px 50px; }
     .advertise .advertise--container {
@@ -28,7 +115,19 @@
       .advertise .advertise--container .advertise--info {
         align-items: center; }
       .advertise .advertise--container .advertise--img {
-        margin-left: 0; } }
+        margin-left: 0; }
+  .plan--container {
+    padding: 100px 40px 50px; }
+  .pricing--container {
+    padding: 50px 50px 60px;
+    flex-wrap: wrap; }
+    .pricing--container .single--item {
+      flex-basis: 50%;
+      margin-bottom: 40px; }
+  .packages--container {
+    flex-direction: column; }
+    .packages--container .packages--video {
+      align-self: flex-start; } }
 
 @media only screen and (max-width: 650px) {
   .about {
@@ -38,11 +137,23 @@
   footer .top--section {
     flex-direction: column; }
   footer .bottom--section {
-    flex-direction: column; } }
+    align-items: flex-start;
+    flex-direction: column; }
+    footer .bottom--section .left {
+      align-items: flex-start;
+      flex-direction: column; }
+      footer .bottom--section .left a {
+        margin-bottom: 15px; }
+  .packages--container {
+    padding: 50px 60px; } }
 
 @media only screen and (max-width: 450px) {
+  header .main--title form input,
+  header .main--title form .dropdown,
+  header .main--title form button {
+    max-width: 300px; }
   .about {
-    padding: 30px 80px; }
+    padding: 30px 25px; }
     .about .content {
       top: 10%; }
       .about .content .button--first {

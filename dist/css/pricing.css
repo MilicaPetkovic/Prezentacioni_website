@@ -9,31 +9,40 @@ header .nav--bar {
   z-index: 600;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
-  header .nav--bar .left--nav--section {
+  align-items: center;
+  padding: 20px 30px; }
+  header .nav--bar .hamburger {
+    display: none; }
+  header .nav--bar .nav--links {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-basis: 40%; }
-    header .nav--bar .left--nav--section a:hover {
-      color: #6d7893; }
+    width: 100%;
+    align-items: center; }
+    header .nav--bar .nav--links .left--nav--section {
+      display: flex;
+      justify-content: space-between;
+      flex-basis: 20%;
+      margin-left: 60px; }
   header .nav--bar a {
-    text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    text-decoration: none; }
   header .nav--bar p {
     color: #fff; }
   header .nav--bar .right--nav--section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-basis: 10%; }
+    flex-basis: 15%; }
     header .nav--bar .right--nav--section .log--in {
       display: flex;
       align-items: center; }
-  header .nav--bar .nav--button a div {
-    border: 1px solid #50e3b3;
-    padding: 15px 20px;
-    border-radius: 50px; }
+    header .nav--bar .right--nav--section .language--container {
+      display: flex;
+      align-items: center; }
+      header .nav--bar .right--nav--section .language--container svg {
+        margin-right: 5px; }
+        header .nav--bar .right--nav--section .language--container svg:last-child {
+          margin-right: 0; }
   header .nav--bar .nav--button a div {
     border: 1px solid #50e3b3;
     padding: 15px 20px;
@@ -47,13 +56,6 @@ header .nav--bar {
       color: #fff;
       font-size: 20px;
       margin-left: 8px; }
-  header .nav--bar .language--container {
-    display: flex;
-    align-items: center; }
-    header .nav--bar .language--container svg {
-      margin-right: 5px; }
-      header .nav--bar .language--container svg:last-child {
-        margin-right: 0; }
 
 .plan--container {
   padding: 150px 180px 50px; }
@@ -79,8 +81,14 @@ header .nav--bar {
     flex-basis: 25%;
     text-align: center;
     margin-right: 5px; }
+    .pricing--container .single--item:first-child {
+      text-align: left;
+      align-items: flex-start;
+      padding-left: 60px; }
     .pricing--container .single--item:last-child {
       margin-right: 0; }
+    .pricing--container .single--item .pricing--info {
+      justify-content: flex-start; }
     .pricing--container .single--item .switch {
       position: relative;
       display: inline-block;
@@ -100,8 +108,8 @@ header .nav--bar {
         right: 0;
         bottom: 0;
         background-color: #fff;
-        -webkit-transition: .4s;
-        transition: .4s; }
+        -webkit-transition: 0.4s;
+        transition: 0.4s; }
         .pricing--container .single--item .switch .slider:before {
           position: absolute;
           content: "";
@@ -109,26 +117,26 @@ header .nav--bar {
           width: 26px;
           left: 4px;
           bottom: 4px;
-          background-color: #C2F5E5;
-          -webkit-transition: .4s;
-          transition: .4s; }
+          background-color: #c2f5e5;
+          -webkit-transition: 0.4s;
+          transition: 0.4s; }
       .pricing--container .single--item .switch input:checked + .slider:before {
         -webkit-transform: translateX(26px);
         -ms-transform: translateX(26px);
         transform: translateX(26px); }
       .pricing--container .single--item .switch .slider.round {
         border-radius: 35px;
-        border: 1px solid #A0A0A1; }
+        border: 1px solid #a0a0a1; }
         .pricing--container .single--item .switch .slider.round:before {
           border-radius: 50%; }
     .pricing--container .single--item .switch--box {
       padding: 9px 60px 10px;
-      border: 1px solid #D5D5D5;
+      border: 1px solid #d5d5d5;
       margin-bottom: 100px; }
       .pricing--container .single--item .switch--box p span {
         font-weight: bold; }
       .pricing--container .single--item .switch--box p:last-child {
-        color: #FFCD81;
+        color: #ffcd81;
         font-size: 25px;
         font-weight: 600; }
     .pricing--container .single--item .single--property {
@@ -190,9 +198,9 @@ header .nav--bar {
     flex-basis: 20%; }
     .packages--container .packages--video a {
       text-decoration: none;
-      color: #6D7893;
+      color: #6d7893;
       text-align: center;
-      border: 1px solid #6D7893;
+      border: 1px solid #6d7893;
       padding: 15px;
       border-radius: 50px;
       display: flex;

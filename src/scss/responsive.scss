@@ -1,4 +1,24 @@
+@import "variables";
+@media only screen and (max-width: 1600px) {
+  header {
+    .slick-slider {
+      .slick-dots {
+        bottom: 90px;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 1500px) {
+  // main page
+  header {
+    .nav--bar {
+      .nav--links {
+        .left--nav--section {
+          flex-basis: 25%;
+        }
+      }
+    }
+  }
   footer {
     .top--section {
       padding: 45px 60px;
@@ -13,50 +33,80 @@
     }
   }
 }
+@media only screen and (max-width: 1280px) {
+  // pricing page
+  .plan--container {
+    padding: 150px 80px 50px;
+    .illustration--section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  .pricing--container {
+    flex-wrap: wrap;
+    .single--item {
+      flex-basis: 40%;
+      margin-bottom: 40px;
+      .switch--box {
+        padding: 9px 20px 10px;
+      }
+    }
+  }
+}
 
 @media only screen and (max-width: 1200px) {
-  // header {
-  //   .nav--bar {
-  //     .hamburger {
-  //       position: absolute;
-  //       z-index: 9999;
-  //       cursor: pointer;
-  //       right: 5%;
-  //       top: 5%;
-  //       .line {
-  //         width: 30px;
-  //         height: 3px;
-  //         background-color: #fff;
-  //         margin: 5px;
-  //       }
-  //     }
-  //     .nav--links {
-  //       position: absolute;
-  //       background-color: #000;
-  //       height: 100vh;
-  //       width: 100%;
-  //       z-index: 999;
-  //       flex-direction: column;
-  //       justify-content: center;
-  //       align-items: center;
-  //       p,
-  //       a {
-  //         font-size: 45px;
-  //       }
-  //       .left--nav--section {
-  //         flex-direction: column;
-  //         margin-bottom: 20px;
-  //       }
-  //       .right--nav--section {
-  //         .log--in {
-  //           svg {
-  //             width: 50px;
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
+  // main page
+  header {
+    .nav--bar {
+      background-color: $dark_blue;
+      .hamburger {
+        position: absolute;
+        display: block;
+        right: 5%;
+        font-size: 40px;
+        color: #fff;
+        z-index: 9999;
+        cursor: pointer;
+      }
+      .nav--links {
+        display: none;
+      }
+      .nav--links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        height: 100vh;
+        background-color: #000;
+        opacity: 0.9;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        .left--nav--section {
+          flex-direction: column;
+          margin-left: 0;
+          text-align: center;
+          align-items: center;
+          margin-bottom: 60px;
+          a {
+            font-size: 35px;
+          }
+        }
+        .right--nav--section {
+          flex-direction: column;
+          p {
+            font-size: 35px;
+          }
+        }
+      }
+    }
+  }
+  .active {
+    display: block;
+  }
   .about {
     padding: 150px 180px;
   }
@@ -72,12 +122,57 @@
         }
         &:nth-child(4) {
           flex-basis: 50%;
+          margin-bottom: 30px;
+          align-self: flex-start;
+          text-align: left;
+        }
+      }
+    }
+  }
+  // pricing page
+  .packages--container {
+    padding: 120px 100px;
+  }
+}
+@media only screen and (max-width: 880px) {
+  header {
+    .slick-slider {
+      .slick-dots {
+        bottom: 60px;
+      }
+    }
+    .main--title {
+      top: 20%;
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 7px;
+        .dropdown {
+          margin-bottom: 7px;
+          width: 100%;
+        }
+        button {
+          width: 100%;
+          justify-content: center;
+        }
+        input {
+          margin-bottom: 7px;
         }
       }
     }
   }
 }
 @media only screen and (max-width: 850px) {
+  // main page
+  header {
+    .main--title {
+      h1 {
+        max-width: 80%;
+      }
+    }
+  }
   .advertise {
     padding: 50px 60px 50px;
     .advertise--container {
@@ -90,8 +185,27 @@
       }
     }
   }
+  // pricing page
+  .plan--container {
+    padding: 100px 40px 50px;
+  }
+  .pricing--container {
+    padding: 50px 50px 60px;
+    flex-wrap: wrap;
+    .single--item {
+      flex-basis: 50%;
+      margin-bottom: 40px;
+    }
+  }
+  .packages--container {
+    flex-direction: column;
+    .packages--video {
+      align-self: flex-start;
+    }
+  }
 }
 @media only screen and (max-width: 650px) {
+  // main page
   .about {
     padding: 60px 100px;
     .content {
@@ -103,13 +217,37 @@
       flex-direction: column;
     }
     .bottom--section {
+      align-items: flex-start;
       flex-direction: column;
+      .left {
+        align-items: flex-start;
+        flex-direction: column;
+        a {
+          margin-bottom: 15px;
+        }
+      }
     }
+  }
+  // pricing page
+  .packages--container {
+    padding: 50px 60px;
   }
 }
 @media only screen and (max-width: 450px) {
+  // main page
+  header {
+    .main--title {
+      form {
+        input,
+        .dropdown,
+        button {
+          max-width: 300px;
+        }
+      }
+    }
+  }
   .about {
-    padding: 30px 80px;
+    padding: 30px 25px;
     .content {
       top: 10%;
       .button--first {
@@ -120,6 +258,7 @@
   }
 }
 @media only screen and (max-width: 335px) {
+  // main page
   .about {
     .content {
       .button--first {

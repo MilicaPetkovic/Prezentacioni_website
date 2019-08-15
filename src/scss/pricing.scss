@@ -4,6 +4,9 @@ header {
   .nav--bar {
     padding: 15px 45px;
     background-color: $dark_blue;
+    .hamburger {
+      display: none;
+    }
     position: absolute;
     top: 0;
     left: 0;
@@ -13,51 +16,52 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    .left--nav--section {
+    padding: 20px 30px;
+    .nav--links {
       display: flex;
       justify-content: space-between;
+      width: 100%;
       align-items: center;
-      flex-basis: 40%;
-
-      a:hover {
-        color: #6d7893;
+      .left--nav--section {
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 20%;
+        margin-left: 60px;
       }
     }
-
     a {
-      text-decoration: none;
       color: #fff;
+      text-decoration: none;
     }
-
     p {
       color: #fff;
     }
-
     .right--nav--section {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-basis: 10%;
-
+      flex-basis: 15%;
       .log--in {
         display: flex;
         align-items: center;
       }
-    }
+      .language--container {
+        display: flex;
+        align-items: center;
+        svg {
+          margin-right: 5px;
 
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
     .nav--button a div {
       border: 1px solid $green_button;
       padding: 15px 20px;
       border-radius: 50px;
     }
-
-    .nav--button a div {
-      border: 1px solid $green_button;
-      padding: 15px 20px;
-      border-radius: 50px;
-    }
-
     .likes {
       display: flex;
       justify-content: space-between;
@@ -68,19 +72,6 @@ header {
         color: #fff;
         font-size: 20px;
         margin-left: 8px;
-      }
-    }
-
-    .language--container {
-      display: flex;
-      align-items: center;
-
-      svg {
-        margin-right: 5px;
-
-        &:last-child {
-          margin-right: 0;
-        }
       }
     }
   }
@@ -109,7 +100,7 @@ header {
   }
 }
 
-// pricing section 
+// pricing section
 .pricing--container {
   padding: 50px 50px 140px;
   display: flex;
@@ -119,12 +110,20 @@ header {
     flex-basis: 25%;
     text-align: center;
     margin-right: 5px;
+    &:first-child {
+      text-align: left;
+      align-items: flex-start;
+      padding-left: 60px;
+    }
 
     &:last-child {
       margin-right: 0;
     }
+    .pricing--info {
+      justify-content: flex-start;
+    }
 
-    // toggle button 
+    // toggle button
     .switch {
       position: relative;
       display: inline-block;
@@ -136,7 +135,7 @@ header {
         width: 0;
         height: 0;
 
-        &:checked+.slider {
+        &:checked + .slider {
           background-color: #fff;
         }
       }
@@ -149,8 +148,8 @@ header {
         right: 0;
         bottom: 0;
         background-color: #fff;
-        -webkit-transition: .4s;
-        transition: .4s;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
 
         &:before {
           position: absolute;
@@ -159,13 +158,13 @@ header {
           width: 26px;
           left: 4px;
           bottom: 4px;
-          background-color: #C2F5E5;
-          -webkit-transition: .4s;
-          transition: .4s;
+          background-color: #c2f5e5;
+          -webkit-transition: 0.4s;
+          transition: 0.4s;
         }
       }
 
-      input:checked+.slider:before {
+      input:checked + .slider:before {
         -webkit-transform: translateX(26px);
         -ms-transform: translateX(26px);
         transform: translateX(26px);
@@ -173,7 +172,7 @@ header {
 
       .slider.round {
         border-radius: 35px;
-        border: 1px solid #A0A0A1;
+        border: 1px solid #a0a0a1;
 
         &:before {
           border-radius: 50%;
@@ -183,7 +182,7 @@ header {
 
     .switch--box {
       padding: 9px 60px 10px;
-      border: 1px solid #D5D5D5;
+      border: 1px solid #d5d5d5;
       margin-bottom: 100px;
 
       p {
@@ -192,7 +191,7 @@ header {
         }
 
         &:last-child {
-          color: #FFCD81;
+          color: #ffcd81;
           font-size: 25px;
           font-weight: 600;
         }
@@ -253,7 +252,7 @@ header {
       display: inline-block;
     }
 
-    .pricing--info>* {
+    .pricing--info > * {
       padding: 15px 0;
     }
 
@@ -281,7 +280,7 @@ header {
   }
 }
 
-// packages 
+// packages
 .packages--container {
   padding: 150px 180px;
   display: flex;
@@ -302,9 +301,9 @@ header {
 
     a {
       text-decoration: none;
-      color: #6D7893;
+      color: #6d7893;
       text-align: center;
-      border: 1px solid #6D7893;
+      border: 1px solid #6d7893;
       padding: 15px;
       border-radius: 50px;
       display: flex;
@@ -320,10 +319,9 @@ header {
       }
     }
   }
-
 }
 
-// footer 
+// footer
 footer {
   background-color: $dark_blue;
 
