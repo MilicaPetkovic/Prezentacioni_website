@@ -248,8 +248,6 @@ footer {
             border-radius: 50px; }
     footer .top--section .footer--socials svg {
       margin-right: 20px; }
-    footer .top--section .footer--socials svg:hover {
-      fill: red; }
   footer .bottom--section {
     padding: 20px 100px;
     border-top: 1px solid #6d7893;

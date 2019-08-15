@@ -5,14 +5,14 @@ header {
     object-fit: contain;
     .slick-prev {
       left: 60px;
-      z-index: 999;
+      z-index: 65;
       &:before {
         font-size: 40px;
       }
     }
     .slick-next {
       right: 60px;
-      z-index: 999;
+      z-index: 65;
       &:before {
         font-size: 40px;
       }
@@ -262,7 +262,6 @@ footer {
           color: #fff;
           display: block;
           text-decoration: none;
-          // margin-bottom: 15px;
           margin-top: 25px;
         }
       }
@@ -271,7 +270,6 @@ footer {
           color: #fff;
           display: block;
           text-decoration: none;
-          // margin-bottom: 15px;
           margin-top: 25px;
         }
       }
@@ -306,9 +304,6 @@ footer {
     .footer--socials {
       svg {
         margin-right: 20px;
-      }
-      svg:hover {
-        fill: red; // ne radi
       }
     }
   }
